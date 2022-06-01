@@ -1,9 +1,9 @@
 void main() {
-  var isRaining = true;
+  var jamBuka = 8, jamTutup = 21, sekarang = 17;
 
-  print('Prepare before going to office.');
-  if (isRaining) {
-    print("Oh. It's raining, bring an umbrella.");
+  if (sekarang > jamBuka && sekarang < jamTutup) {
+    print('Toko Buka');
+  } else {
+    print('Toko Tutup');
   }
-  print('Going to the office.');
 }
