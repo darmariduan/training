@@ -1,9 +1,22 @@
-void main() {
-  var jamBuka = 8, jamTutup = 21, sekarang = 17;
+import 'dart:io';
 
-  if (sekarang > jamBuka && sekarang < jamTutup) {
-    print('Toko Buka');
+void main() {
+  stdout.write('Inputkan nilai (1-100) : ');
+  var score = num.parse(stdin.readLineSync()!);
+
+  print('Nilai Kamu : ${kalkulatorScore(score)}');
+}
+
+String kalkulatorScore(num score) {
+  if (score > 90) {
+    return 'A';
+  } else if (score > 80) {
+    return 'B';
+  } else if (score > 70) {
+    return 'C';
+  } else if (score > 60) {
+    return 'D';
   } else {
-    print('Toko Tutup');
+    return 'E';
   }
 }
